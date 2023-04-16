@@ -1,0 +1,121 @@
+.swiper {
+  margin-left: 461px;
+  margin-top: 50px;
+  .swiper-wrapper{
+    display: flex;
+    gap: 20px;
+    .swiper-slide{
+      position: relative;
+      .top{
+        span{
+          background: #2A2D32;
+          padding: 5px 15px;
+          position: absolute;
+          left: 0;
+          top: 20px;
+          font-family: 'Segoe UI';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 160%;
+          /* or 32px */
+
+          text-align: center;
+
+          color: #C3D72F;
+        }
+
+      }
+      h3{
+        margin-top: 20px;
+        font-family: 'Segoe UI';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 150%;
+        /* identical to box height, or 33px */
+
+
+        color: #fff;
+        span{
+          color:#C3D72F ;
+        }
+      }
+      p{
+        margin-top: 10px;
+        font-family: 'Segoe UI';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 160%;
+        /* or 27px */
+
+
+        color: #BBBBBB;
+      }
+      .btn-default{
+        margin-top: 40px;
+      }
+    }
+  }
+}
+.swiper-button-prev{
+  position: absolute;
+  left: 206px;
+  top: 350px;
+  background: #2A2D32;
+  width: 235px;
+  height: 79px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  padding:0 22px 0 22px;
+  border: 2px solid #C3D72F;
+
+  &:after{
+    display: none;
+  }
+  span{
+    font-family: 'HelveticaNeueCyr';
+    font-style: normal;
+    font-weight: 550;
+    font-size: 17px;
+    line-height: 23px;
+    /* or 136% */
+    color:     #C3D72F
+  ;
+
+
+  }
+}
+.swiper-button-next{
+  position: absolute;
+  left: 206px;
+  top: 250px;
+  background: #C3D72F;
+  width: 235px;
+  height: 79px;
+  padding: 0 22px 0 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid #C3D72F;
+
+  span{
+    font-family: 'HelveticaNeueCyr';
+    font-style: normal;
+    font-weight: 550;
+    font-size: 17px;
+    line-height: 23px;
+    /* or 136% */
+
+
+    color: #000000;
+  }
+  &:after{
+    display: none;
+  }
+}
+
+

@@ -374,4 +374,242 @@
   gap: 7px;
 }
 
+.video_slider {
+  position: relative;
+}
+.video_slider .row {
+  margin-top: 20px;
+}
+.video_slider .icons {
+  position: absolute;
+  left: 34%;
+  top: 183px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 41px;
+}
+.video_slider .icons .sub_title_2 {
+  text-transform: uppercase;
+  font-family: "HelveticaNeueCyr";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 52px;
+  line-height: 72px;
+  /* or 138% */
+  text-align: center;
+  color: #fff;
+}
+.video_slider .icons .sub_title_2 span {
+  color: #C3D72F;
+}
+.video_slider .icons .icon {
+  background: #C3D72F;
+  width: 123px;
+  height: 123px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.video_slider .icons .icon .hide {
+  display: none;
+}
+
+.Why_me {
+  margin-top: 150px;
+  margin-bottom: 200px;
+}
+.Why_me .block .top {
+  display: flex;
+  align-items: center;
+  gap: 42px;
+}
+.Why_me .block p {
+  font-family: "HelveticaNeueCyr";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 22px;
+  /* or 129% */
+  color: #474747;
+  max-width: 616px;
+  margin-left: 190px;
+  margin-top: 20px;
+}
+.Why_me .block .items {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 191px;
+  margin-top: 30px;
+}
+.Why_me .block .items .item {
+  border: 1px solid #E6E6E6;
+  padding: 26px 38px 31px 39px;
+}
+.Why_me .block .items .item .top {
+  display: flex;
+  align-items: center;
+  gap: 47px;
+}
+.Why_me .block .items .item .top span {
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 140.5%;
+  /* or 31px */
+  width: 321px;
+  color: #333333;
+}
+.Why_me .block .items .item p {
+  margin-left: 106px;
+  margin-top: 13px;
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 160%;
+  /* or 27px */
+  color: #777777;
+  max-width: 441px;
+}
+
+.trevel_team {
+  padding-top: 89px;
+  background: #2A2D32;
+  padding-bottom: 101px;
+}
+.trevel_team .block .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.trevel_team .block .top .sub_title {
+  color: #fff;
+}
+.trevel_team .block .top .wrapper {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+.trevel_team .block .top .btn-default {
+  width: 235px;
+  height: 79px;
+  background: #C3D72F;
+}
+.trevel_team .block .top .btn-default .top {
+  justify-content: flex-end;
+}
+.trevel_team .block .items {
+  margin-top: 85px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.trevel_team .block .items .item .info {
+  margin-left: 20px;
+}
+.trevel_team .block .items .item .info h3 {
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 140.5%;
+  /* identical to box height, or 31px */
+  color: #FFFFFF;
+  margin-top: 23px;
+}
+.trevel_team .block .items .item .info p {
+  margin-top: 15px;
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  /* or 24px */
+  max-width: 704px;
+  color: #BBBBBB;
+}
+.trevel_team .block .items .item .btn-default {
+  margin-top: 39px;
+  margin-left: 20px;
+}
+.trevel_team .block .items .item .mt-15 {
+  margin-top: 15px;
+}
+
+.vopros {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+.vopros .block .top {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+.vopros .block .items {
+  margin-top: 85px;
+  margin-left: 250px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.vopros .block .items .item {
+  display: flex;
+  align-items: center;
+  padding: 50px 0 80px 0;
+  border-top: 1px solid #DADADA;
+  border-bottom: 1px solid #DADADA;
+  gap: 90px;
+  transition: 0.3s ease-in-out;
+}
+.vopros .block .items .item:hover {
+  background: url("/img/main/bg_img.svg");
+  background: rgba(0, 0, 0, 0.6);
+}
+.vopros .block .items .item:hover span {
+  color: transparent;
+}
+.vopros .block .items .item:hover h3 {
+  color: #fff;
+  filter: brightness(100%);
+}
+.vopros .block .items .item:hover p {
+  color: #fff;
+  filter: brightness(100%);
+}
+.vopros .block .items .item span {
+  font-family: "HelveticaNeueCyr";
+  font-style: normal;
+  font-weight: 550;
+  font-size: 17px;
+  line-height: 22px;
+  /* identical to box height, or 129% */
+  color: #AAC005;
+  z-index: 3;
+}
+.vopros .block .items .item h3 {
+  font-family: "HelveticaNeueCyr";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 31px;
+  /* or 123% */
+  color: #333333;
+  width: 301px;
+  z-index: 3;
+}
+.vopros .block .items .item p {
+  font-family: "HelveticaNeueCyr";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+  /* or 126% */
+  color: #777777;
+  max-width: 613px;
+  z-index: 3;
+}
+
 /*# sourceMappingURL=style.css.map */

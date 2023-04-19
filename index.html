@@ -10,6 +10,7 @@
             href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="./css/slider/slider.css">
+    <link rel="stylesheet" href="./css/slider_2/slider_2.css">
 
     <title>Главная</title>
 </head>
@@ -214,13 +215,13 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="top">
-                        <img src="./img/slider/slide_1.svg" alt="">
-                        <span>4-15 АВГУСТА</span>
+                        <img src="./img/slider/slide_2.svg" alt="">
+                        <span>12-22 ИЮНЯ</span>
                     </div>
                     <h3 class="sub_title_3">
-                        <span>Р</span>ОАД-ТРИП: ДОМБАЙ-АРХЫЗ
+                        <span>А</span>ЛТАЙ: ШАВЛИНСКИЕ ОЗЕРА
                     </h3>
-                    <p>Мы приглашаем тебя в очень живописный регион Кавказа – едем в Карачаево-Черкессию! Будем купаться в водопадах, изучать звездное небо, гулять по хвойным/</p>
+                    <p>Поход в дружной компании единомышленников через перевалы, горные кристально чистые реки, подъемы и спуски к Шавлинским озерам. Яркий бирюзовый цвет.</p>
                     <a class="btn-default">
                         <div class="top">
                             <img src="img/main/arrow-btn.svg" alt="arrow-btn">
@@ -232,13 +233,13 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="top">
-                        <img src="./img/slider/slide_1.svg" alt="">
-                        <span>4-15 АВГУСТА</span>
+                        <img src="./img/slider/slide_3.svg" alt="">
+                        <span>12-17 ИЮНЯ</span>
                     </div>
                     <h3 class="sub_title_3">
-                        <span>Р</span>ОАД-ТРИП: ДОМБАЙ-АРХЫЗ
+                        <span>Р</span>ОАД-ТРИП В ОСЕТИЮ
                     </h3>
-                    <p>Мы приглашаем тебя в очень живописный регион Кавказа – едем в Карачаево-Черкессию! Будем купаться в водопадах, изучать звездное небо, гулять по хвойным/</p>
+                    <p>Ты увидишь живописные ущелья, насладишься брызгами водопадов, погреешься в горячих источниках, погуляешь среди гор, познакомишься с традициям.</p>
                     <a class="btn-default">
                         <div class="top">
                             <img src="img/main/arrow-btn.svg" alt="arrow-btn">
@@ -322,8 +323,230 @@
     </div>
 </section>
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
+<section class="video_slider">
+    <div class="slider">
+        <div class="mySlides">
+            <video  class="videos"  src = "./img/y2mate.com%20-%20Introduction%20to%20ITV%20Hub_480p.mp4"  width="100%" poster ="./img/slider_2/slide_1.svg" >
+            </video>
+        </div>
+
+        <div class="mySlides">
+            <video class="videos"  src = "./img/y2mate.com%20-%20Introduction%20to%20ITV%20Hub_480p.mp4"  width="100%" poster ="./img/slider_2/slide_2.svg" >
+            </video>
+        </div>
+
+        <div class="mySlides">
+            <video src = "./img/y2mate.com%20-%20Introduction%20to%20ITV%20Hub_480p.mp4" class="videos"   width="100%" poster ="./img/slider_2/slide_3.svg" >
+            </video>
+        </div>
+
+        <div class="mySlides">
+            <video class="videos"  src = "./img/y2mate.com%20-%20Introduction%20to%20ITV%20Hub_480p.mp4"  width="100%" poster ="./img/slider_2/slide_4.svg" >
+            </video>
+        </div>
+
+
+        <!-- Вперед и назад кнопки -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <!-- Текст изображения -->
+
+
+        <!-- Миниатюры -->
+        <div class="row">
+            <div class="column">
+                <img class="demo cursor" src="./img/slider_2/slide_1.svg" style="width:100%" onclick="currentSlide(1)">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="./img/slider_2/slide_2.svg" style="width:100%" onclick="currentSlide(2)">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="./img/slider_2/slide_3.svg" style="width:100%" onclick="currentSlide(3)">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="./img/slider_2/slide_4.svg" style="width:100%" onclick="currentSlide(4)">
+            </div>
+        </div>
+    </div>
+    <div class="icons">
+        <h2 class="sub_title_2">
+            <span>и</span>нтересные видео
+        </h2>
+        <div class="icon" onclick="Play()">
+            <img class="hover" src="./img/main/play_img.svg" alt="">
+            <img class="hide" src="./img/main/play_hover.svg" alt="">
+        </div>
+    </div>
+</section>
+<section class="Why_me">
+    <div class="container">
+        <div class="block">
+            <div class="top">
+                <div class="yakor">
+                    03 - Преимущества
+                </div>
+                <h2 class="sub_title">
+                    <span>П</span>ОЧЕМУ С НАМИ?
+                </h2>
+            </div>
+                <p>
+                    Мы не будем писать здесь о надежности, заботе, безопасности, и гарантиях - это безусловно так, но есть и моменты, которые отличают нашу команду, состоящую из шести человек. Об этом и расскажем.
+                </p>
+            <div class="items">
+                <!--<div class="item">
+                    <div class="top">
+                        <img src="./img/main/why_img_1.svg" alt="">
+                        <span>ЗНАКОМСТВО С ГИДОМ
+ДО БРОНИРОВАНИЯ</span>
+                    </div>
+                    <p>Мы приглашаем тебя в очень живописный регион Кавказа – едем в Карачаево-Черкессию! Будем купаться в водопадах, изучать звездное небо, гулять по хвойным лесам и дышать горным воздухом</p>
+                </div>
+                <div class="item">
+                    <div class="top">
+                        <img src="./img/main/why_img_2.svg" alt="">
+                        <span>ОТЛИЧНАЯ
+СРАБОТАННОСТЬ</span>
+                    </div>
+                    <p>Мы - небольшая команда и нам не нужно срабатываться на старте путешествия. Мы понимаем друг друга со взгляда, с полуслова, страхуем и поддерживаем.</p>
+                </div>
+                <div class="item">
+                    <div class="top">
+                        <img src="./img/main/why_img_3.svg" alt="">
+                        <span>ДЕЛАЕМ ТО,
+ЧТО ЛЮБИМ САМИ</span>
+                    </div>
+                    <p>И этим всё сказано. В наших поездках часто можно встретить хостелы, вместо гостиниц. А иногда и палатки, вместо хостелов. Основная цель путешествия - путешествие, а не двуспальная кровать как дома</p>
+                </div>
+                <div class="item">
+                    <div class="top">
+                        <img src="./img/main/why_img_4.svg" alt="">
+                        <span>ГИД ТОЖЕ В ВОСТОРГЕ
+ОТ МАРШРУТА</span>
+                    </div>
+                    <p>Мы стараемся не повторять маршруты несколько заездов подряд - а значит твой гид, оказавшись снова спустя год в любимом месте, испытывает такие же ощущения от увиденного, как и ты.</p>
+                </div>-->
+                <img src="./img/main/krestikisvg.svg" alt="">
+
+            </div>
+        </div>
+    </div>
+</section>
+<section class="trevel_team">
+    <div class="container">
+        <div class="block">
+            <div class="top">
+                <div class="wrapper">
+                    <div class="yakor">
+                        04 - Команда
+                    </div>
+                    <h2 class="sub_title">
+                        <span>Т</span>РЭВЕЛ-КОМАНДА
+                    </h2>
+                </div>
+
+                <a class="btn-default">
+                    <div class="top">
+                        <img src="img/main/arrow-btn.svg" alt="arrow-btn">
+                    </div>
+                    <div class="bottom">
+                        <span>Хочу к вам</span>
+                    </div>
+                </a>
+
+            </div>
+            <div class="items">
+                <div class="item">
+                    <img src="./img/main/team_img_1.svg" alt="">
+                    <div class="info">
+                        <h3 class="sub_title_3">
+                            СЕРГЕЙ ЗАХАРОВ
+                        </h3>
+                        <p>«Обычно, я представляюсь как Сергей, который любит жить. Жить в вечном путешествии
+                            и поиске новых ощущений от поездок, а потом делиться эмоциями с туристами».
+                        </p>
+                    </div>
+                    <a class="btn-default">
+                        <div class="top">
+                            <img src="img/main/arrow-btn.svg" alt="arrow-btn">
+                        </div>
+                        <div class="bottom">
+                            <span>@mix2mix</span>
+                        </div>
+                    </a>
+
+
+                </div>
+                <div class="item">
+                    <img src="./img/main/team_img_2.svg" alt="">
+                    <div class="info">
+                        <h3 class="sub_title_3">
+                            МАРИНА ГАТИКОЕВА
+                        </h3>
+                        <p>Менеджер и координатор путешествий.«Я много путешествую, обожаю походы и планирование новых маршрутов. Мое вдохновение - это улыбки наших путешественников, впервые оказавшихся в горах».
+                        </p>
+                    </div>
+                    <a class="btn-default mt-15">
+                        <div class="top">
+                            <img src="img/main/arrow-btn.svg" alt="arrow-btn">
+                        </div>
+                        <div class="bottom">
+                            <span>@__marindaaa</span>
+                        </div>
+                    </a>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<section class="vopros">
+    <div class="container">
+        <div class="block">
+            <div class="top">
+                <div class="yakor">
+                    03 - Вопрос-Ответ
+                </div>
+                <h2 class="sub_title">
+                    <span>Ч</span>АСТО ЗАДАВАЕМЫЕ ВОПРОСЫ
+                </h2>
+            </div>
+            <div class="items">
+                <div class="item">
+                    <span>01</span>
+                    <h3>Можно ли поехать одному?</h3>
+                    <p>Конечно! Мы набираем сборные группы, где ты обязательно найдешь себе единомышленников, а может быть даже и друзей! У нас есть множество историй, в которых люди после путешествия становились друзьями, собирались в другие трипы и собирались компаниями еще не один раз.
+                    </p>
+                </div>
+                <div class="item">
+                    <span>01</span>
+                    <h3>Можно ли поехать одному?</h3>
+                    <p>Конечно! Мы набираем сборные группы, где ты обязательно найдешь себе единомышленников, а может быть даже и друзей! У нас есть множество историй, в которых люди после путешествия становились друзьями, собирались в другие трипы и собирались компаниями еще не один раз.
+                    </p>
+                </div>
+                <div class="item">
+                    <span>01</span>
+                    <h3>Можно ли поехать одному?</h3>
+                    <p>Конечно! Мы набираем сборные группы, где ты обязательно найдешь себе единомышленников, а может быть даже и друзей! У нас есть множество историй, в которых люди после путешествия становились друзьями, собирались в другие трипы и собирались компаниями еще не один раз.
+                    </p>
+                </div>
+                <div class="item">
+                    <span>01</span>
+                    <h3>Можно ли поехать одному?</h3>
+                    <p>Конечно! Мы набираем сборные группы, где ты обязательно найдешь себе единомышленников, а может быть даже и друзей! У нас есть множество историй, в которых люди после путешествия становились друзьями, собирались в другие трипы и собирались компаниями еще не один раз.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<script src="./js/slider_2.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <script>
     const swiper = new Swiper('.swiper', {
         // Optional parameters
@@ -350,5 +573,6 @@
         },
     });
 </script>
+
 </body>
 </html>

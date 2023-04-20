@@ -49,15 +49,11 @@ function Tabs(options){
     }
 
     function createNavMarker(){
-        var marker = document.createElement("div");
-        marker.classList.add("c-tab-nav-marker");
-        tabNavigation.appendChild(marker);
-        return marker;
+
     }
 
     function setMarker(element){
-        marker.style.left = element.offsetLeft +"px";
-        marker.style.width = element.offsetWidth + "px";
+
     }
 
     return {

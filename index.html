@@ -11,6 +11,7 @@
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
+    <meta >
     <link rel="stylesheet" href="./css/slider/slider.css">
     <link rel="stylesheet" href="./css/slider_2/slider_2.css">
 
@@ -99,7 +100,7 @@
                     <span> <h5>Направления, места в</h5> которых разлетаются сейчас как горячие пирожки</span>
                 </div>
             </div>
-            <div class="wrapper">
+            <!--<div class="wrapper">
                 <div class="item">
                     <div class="img">
                         <img src="./img/main/img_1.svg" alt="">
@@ -164,6 +165,79 @@
 
                 </div>
 
+            </div>-->
+            <div class="swiper_3">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="item">
+                            <div class="img">
+                                <img src="./img/main/img_1.svg" alt="">
+                                <div class="data">4-15 АВГУСТА</div>
+                            </div>
+                            <h3>
+                                <span>К</span>АМЧАТКА: ПОХОД ВОКРУГ ТОЛБАЧИКА
+                            </h3>
+                            <p>
+                                То, что ты увидишь вокруг - заставит забыть обо всем. По бескрайним полям голубики и марсианским землям, вулканическому пеплу и зарослям кустарника, по мшистым тропкам и удивительным каньонам.
+                            </p>
+                            <a class="btn-default">
+                                <div class="top">
+                                    <img src="img/main/arrow-btn.svg" alt="arrow-btn">
+                                </div>
+                                <div class="bottom">
+                                    <span>Подробнее</span>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="item">
+                            <div class="img">
+                                <img src="./img/main/img_2.svg" alt="">
+                                <div class="data">4-15 АВГУСТА</div>
+                            </div>
+                            <h3>
+                                <span>С</span>ОЛНЕЧНЫЙ ДАГЕСТАН
+                            </h3>
+                            <p>
+                                Проедем сотни километров горных дорог, полюбуемся красивейшими ущельями и теснинами, насладимся морским бризом Каспийского моря, с ветерком прокатимся на катере по знаменитому.
+                            </p>
+                            <a class="btn-default">
+                                <div class="top">
+                                    <img src="img/main/arrow-btn.svg" alt="arrow-btn">
+                                </div>
+                                <div class="bottom">
+                                    <span>Подробнее</span>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="item">
+                            <div class="img">
+                                <img src="./img/main/img_3.svg" alt="">
+                                <div class="data">4-15 АВГУСТА</div>
+                            </div>
+                            <h3>
+                                <span>К</span>УРИЛЫ: ПОХОД ПО КУНАШИРУ
+                            </h3>
+                            <p>
+                                Маршрут по вулканам вдоль океана! Поднимемся на три вулкана, послушаем шум волн, увидим фумаролы, горячие озера, мертвый лес, заросли бамбучника и километры пляжей из черного песка.
+                            </p>
+                            <a class="btn-default">
+                                <div class="top">
+                                    <img src="img/main/arrow-btn.svg" alt="arrow-btn">
+                                </div>
+                                <div class="bottom">
+                                    <span>Подробнее</span>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -429,6 +503,35 @@
                 </div>-->
                 <img src="./img/main/krestikisvg.svg" alt="">
 
+            </div>
+        </div>
+    </div>
+</section>
+<section class="poezdka">
+    <div class="block">
+        <div class="top">
+            <marquee behavior="scroll" direction="left">
+                <div class="text">
+                    поездка <span>х</span> поход <span>x</span> путешествие <span>x</span>
+                </div>
+            </marquee>
+        </div>
+        <div class="bottom">
+            <div class="left">
+                <img class="img_1" src="./img/main/poezdka/img.svg" alt="">
+                <img class="img_2" src="./img/main/poezdka/img-circle.svg" alt="">
+                <img class="img_3" src="./img/main/poezdka/img_2.png" alt="">
+                <img class="img_4" src="./img/main/poezdka/img_3.png" alt="">
+                <img class="img_5" src="./img/main/poezdka/img_4.png" alt="">
+            </div>
+            <div class="center">
+                <img class="img_6" src="./img/main/poezdka/img_5.png" alt="">
+            </div>
+            <div class="right">
+                <img class="img_7" src="./img/main/poezdka/img-hover.png" alt="">
+                <div class="img-hover">
+
+                </div>
             </div>
         </div>
     </div>
@@ -795,7 +898,14 @@
             </div>
         </div>
 </footer>
+
+
+
+
 <script src="./js/slider_2.js"></script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <script>
@@ -803,6 +913,25 @@
         direction: 'horizontal',
         loop: true,
         slidesPerView:1.5,
+        gap:20,
+
+        navigation: {
+            nextEl: '.btn_swiper-next',
+            prevEl: '.btn_swiper-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+    });
+</script>
+
+<script>
+    const swiper_3 = new Swiper('.swiper_3',{
+        direction: 'horizontal',
+        loop: true,
+        slidesPerView:3,
         gap:20,
 
         navigation: {
@@ -824,6 +953,10 @@
         slidesPerView:3,
         gap:20,
 
+        autoplay: {
+            delay: 2500,
+        },
+
 
         // If we need pagination
         pagination: {
@@ -843,5 +976,6 @@
     });
 </script>
 <script src="./js/tabs.js"></script>
+<script src="./js/slider_poezdka.js"></script>
 </body>
 </html>

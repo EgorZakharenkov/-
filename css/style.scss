@@ -299,78 +299,80 @@
         }
       }
     }
-    .wrapper{
+    .wrapper, .swiper_3{
       margin-top: 39px;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      .item{
-        .btn-default{
-          margin-top: 37px;
-          .top{
-            justify-content: flex-end;
-          }
-          .bottom{
-            span{
-              font-family: 'HelveticaNeueCyr';
-              font-style: normal;
-              font-weight: 550;
-              font-size: 17px;
-              line-height: 23px;
-              /* or 136% */
-
-
-              color: #2A2D32;
-            }
-          }
+      overflow: hidden;
+    }
+    .item{
+      .btn-default{
+        margin-top: 37px;
+        .top{
+          justify-content: flex-end;
         }
-        .img{
-          position: relative;
-          width: 489px;
-          height: 381px;
-          .data{
-            position: absolute;
-            top: 25px;
-            left: 0;
-            padding: 5px 15px;
-            background: #2A2D32;
-            color: #C3D72F;
-            font-family: 'Segoe UI';
+        .bottom{
+          span{
+            font-family: 'HelveticaNeueCyr';
             font-style: normal;
-            font-weight: 700;
-            font-size: 20px;
-            line-height: 160%;
+            font-weight: 550;
+            font-size: 17px;
+            line-height: 23px;
+            /* or 136% */
+
+
+            color: #2A2D32;
           }
         }
-        h3{
+      }
+      .img{
+        position: relative;
+        width: 489px;
+        height: 381px;
+        .data{
+          position: absolute;
+          top: 25px;
+          left: 0;
+          padding: 5px 15px;
+          background: #2A2D32;
+          color: #C3D72F;
           font-family: 'Segoe UI';
           font-style: normal;
           font-weight: 700;
-          font-size: 22px;
-          line-height: 150%;
-          /* identical to box height, or 33px */
-
-        color: #000;
-          span{
-            color: #AAC005;
-
-          }
-        }
-        p{
-          margin-top: 10px;
-          max-width: 449px;
-          font-family: 'Segoe UI';
-          font-style: normal;
-          font-weight: 400;
-          font-size: 17px;
+          font-size: 20px;
           line-height: 160%;
-          /* or 27px */
-
-
-          color: #777777;
         }
       }
+      h3{
+        font-family: 'Segoe UI';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 150%;
+        /* identical to box height, or 33px */
+
+        color: #000;
+        span{
+          color: #AAC005;
+
+        }
+      }
+      p{
+        margin-top: 10px;
+        max-width: 449px;
+        font-family: 'Segoe UI';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 160%;
+        /* or 27px */
+
+
+        color: #777777;
+      }
     }
+
   }
 }
 .raspisanie{
@@ -510,7 +512,98 @@
 
   }
 }
+.poezdka{
+  margin-bottom: 150px;
+  .block{
 
+    .text{
+      padding: 20px;
+      font-family: 'HelveticaNeueCyr';
+      font-style: normal;
+      font-weight: 900;
+      font-size: 117px;
+      line-height: 72px;
+      /* identical to box height, or 62% */
+
+      text-transform: uppercase;
+
+      color: #2A2D32;
+      span{
+        color: #C3D72F;
+      }
+    }
+    .bottom{
+      margin-top: 200px;
+      display: flex;
+      gap: 23px;
+      .left{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 20px;
+        .img_1{
+          width: 505px;
+          height: 227px;
+        }
+        .img_2{
+          width: 228px;
+          height: 228px;
+          animation: 10s linear 0s normal none infinite running rot;
+          -webkit-animation: 10s linear 0s normal none infinite running rot;
+        }
+        @keyframes rot {
+          0% {
+            transform: rotate(0deg);
+          }
+          100% {
+            transform: rotate(360deg);
+          }
+        }
+        @-webkit-keyframes rot {
+          0% {
+            transform: rotate(0deg);
+          }
+          100% {
+            transform: rotate(360deg);
+          }
+        }
+        .img_3{
+          margin-left: 40px;
+          width: 292px;
+          height: 292px;
+        }
+        .img_4{
+          width: 191px;
+          height: 252px;
+        }
+        .img_5{
+          width: 181px;
+          height: 182px;
+        }
+
+      }
+      .right{
+        position: relative;
+        .img-hover{
+          position: absolute;
+          display: none;
+          top: 0;
+          left: 30%;
+          transition: .5s;
+
+          background:url("../../img/main/poezdka/img-hover-active.png");
+        }
+        &:hover{
+          .img-hover{
+            display: block;
+            width: 250px;
+            height: 469px;
+          }
+        }
+      }
+    }
+  }
+}
 
 .trevel_team{
   padding-top: 89px;
@@ -1188,3 +1281,5 @@
     }
   }
 }
+
+

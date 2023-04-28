@@ -287,19 +287,20 @@
   /* or 138% */
   color: #474747;
 }
-.popular .block .wrapper {
+.popular .block .wrapper, .popular .block .swiper_3 {
   margin-top: 39px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  overflow: hidden;
 }
-.popular .block .wrapper .item .btn-default {
+.popular .block .item .btn-default {
   margin-top: 37px;
 }
-.popular .block .wrapper .item .btn-default .top {
+.popular .block .item .btn-default .top {
   justify-content: flex-end;
 }
-.popular .block .wrapper .item .btn-default .bottom span {
+.popular .block .item .btn-default .bottom span {
   font-family: "HelveticaNeueCyr";
   font-style: normal;
   font-weight: 550;
@@ -308,12 +309,12 @@
   /* or 136% */
   color: #2A2D32;
 }
-.popular .block .wrapper .item .img {
+.popular .block .item .img {
   position: relative;
   width: 489px;
   height: 381px;
 }
-.popular .block .wrapper .item .img .data {
+.popular .block .item .img .data {
   position: absolute;
   top: 25px;
   left: 0;
@@ -326,7 +327,7 @@
   font-size: 20px;
   line-height: 160%;
 }
-.popular .block .wrapper .item h3 {
+.popular .block .item h3 {
   font-family: "Segoe UI";
   font-style: normal;
   font-weight: 700;
@@ -335,10 +336,10 @@
   /* identical to box height, or 33px */
   color: #000;
 }
-.popular .block .wrapper .item h3 span {
+.popular .block .item h3 span {
   color: #AAC005;
 }
-.popular .block .wrapper .item p {
+.popular .block .item p {
   margin-top: 10px;
   max-width: 449px;
   font-family: "Segoe UI";
@@ -474,6 +475,90 @@
   /* or 27px */
   color: #777777;
   max-width: 441px;
+}
+
+.poezdka {
+  margin-bottom: 150px;
+}
+.poezdka .block .text {
+  padding: 20px;
+  font-family: "HelveticaNeueCyr";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 117px;
+  line-height: 72px;
+  /* identical to box height, or 62% */
+  text-transform: uppercase;
+  color: #2A2D32;
+}
+.poezdka .block .text span {
+  color: #C3D72F;
+}
+.poezdka .block .bottom {
+  margin-top: 200px;
+  display: flex;
+  gap: 23px;
+}
+.poezdka .block .bottom .left {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+.poezdka .block .bottom .left .img_1 {
+  width: 505px;
+  height: 227px;
+}
+.poezdka .block .bottom .left .img_2 {
+  width: 228px;
+  height: 228px;
+  animation: 10s linear 0s normal none infinite running rot;
+  -webkit-animation: 10s linear 0s normal none infinite running rot;
+}
+@keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.poezdka .block .bottom .left .img_3 {
+  margin-left: 40px;
+  width: 292px;
+  height: 292px;
+}
+.poezdka .block .bottom .left .img_4 {
+  width: 191px;
+  height: 252px;
+}
+.poezdka .block .bottom .left .img_5 {
+  width: 181px;
+  height: 182px;
+}
+.poezdka .block .bottom .right {
+  position: relative;
+}
+.poezdka .block .bottom .right .img-hover {
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 30%;
+  transition: 0.5s;
+  background: url("../../img/main/poezdka/img-hover-active.png");
+}
+.poezdka .block .bottom .right:hover .img-hover {
+  display: block;
+  width: 250px;
+  height: 469px;
 }
 
 .trevel_team {
